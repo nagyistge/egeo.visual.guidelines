@@ -1,0 +1,143 @@
+@import '../node_modules/egeo.ui.base/dist/sass/settings/settings';
+@import '../node_modules/egeo.ui.base/dist/sass/settings/settings.colors';
+@import '../node_modules/egeo.ui.base/dist/sass/settings/settings.fonts';
+@import '../node_modules/egeo.ui.base/dist/sass/settings/settings.icons';
+@import '../node_modules/egeo.ui.base/dist/sass/settings/settings.typography';
+
+@import '../node_modules/egeo.ui.base/dist/sass/tools/tools.log';
+@import '../node_modules/egeo.ui.base/dist/sass/tools/tools.colors';
+@import '../node_modules/egeo.ui.base/dist/sass/tools/tools.typography';
+
+@import '../node_modules/egeo.ui.base/dist/sass/utils/utils.alignments';
+@import '../node_modules/egeo.ui.base/dist/sass/utils/utils.floats';
+@import '../node_modules/egeo.ui.base/dist/sass/utils/utils.text';
+
+h3 {
+	color: get-color(c1) !important;
+	font-weight: normal !important;
+	margin: 60px 0 15px !important;
+}
+
+h4 {
+	margin: 30px 0 15px !important;
+}
+
+h2 + h3,
+h3 + h4 {
+	margin: 15px 0 15px !important;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	border: 1px solid lightgray;
+	box-sizing: border-box;
+	display: inline-block;
+	font-size: 3rem;
+	margin: .5rem;
+	padding: .5rem;
+	text-align: center;
+	width: 18%;
+}
+
+.compatibility {
+	font-family: monospace;
+	font-size: get-font-size(small);
+	margin-top: 30px;
+}
+
+.icon__name {
+    background-color: black;
+    color: white;
+    display: block;
+    font-size: 1rem;
+    margin: .5em -.5em -.5em;
+    padding: .5em;
+}
+
+.tag {
+	display: inline-block;
+	font-size: get-font-size(small);
+	margin: 0 .5rem 0 0;
+    padding: .2em .7em;
+
+	&--default,
+	&--tested {
+		background: get-color(e1);
+		color: white;
+	}
+
+	&--immutable,
+	&--not-supported,
+	&--untested {
+		background: get-color(e3);
+		color: white;
+	}
+}
+
+.kss-description {
+	table {
+		border-collapse: collapse;
+		width: 100%;
+
+		thead {
+			border-bottom: 1px solid #997722;
+			font-weight: normal;
+			padding: 10px 0;
+		}
+
+		td {
+			padding: 5px 15px;
+			text-align: center;
+		}
+
+		tr:nth-child(even) {
+			background-color: #ececec;
+		}
+	}
+}
+
+.color-block {
+	border: 1px solid #ececec;
+	box-sizing: border-box;
+	color: white;
+	display: inline-block;
+	min-height: 150px;
+	position: relative;
+	width: 15%;
+
+	&__title {
+		background: white;
+		bottom: 0;
+		box-sizing: border-box;
+		color: black;
+		min-height: 20px;
+		padding: 1em;
+		position: absolute;
+		width: 100%;
+	}
+}
+
+.typo-block {
+	@include font-families;
+	@include font-sizes;
+	@include font-weights;
+	@include line-heights;
+
+	//border: 1px solid lightgray;
+	box-sizing: border-box;
+	display: inline-block;
+	//padding: 5px;
+	text-align: left;
+	width: 100%;
+}
+
+@each $color-name, $color in $colors {
+	.color-block-#{$color-name} {
+		background: $color;
+
+		.color-block__title {
+			&:before {
+				//content: '#{$color-name}: #{$color}'
+			}
+		}
+	}
+}
