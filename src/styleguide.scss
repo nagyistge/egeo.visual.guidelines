@@ -12,6 +12,15 @@
 @import '../node_modules/egeo.ui.base/dist/sass/utils/utils.floats';
 @import '../node_modules/egeo.ui.base/dist/sass/utils/utils.text';
 
+.version {
+	color: get-color(g5);
+	font-size: get-font-size(small);
+    text-align: right;
+    margin-top: -30px;
+    margin-right: 2px;
+    font-family: get-font(open-sans);
+}
+
 h3 {
 	color: get-color(c1) !important;
 	font-weight: normal !important;
