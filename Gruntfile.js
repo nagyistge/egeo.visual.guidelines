@@ -62,12 +62,11 @@ module.exports = function (grunt) {
     sass: {
       dist: {
         options: {
-          sourcemap: 'auto',  // The sourcemaps are a way to map the compiled and
+          sourceMap: 'auto',  // The sourcemaps are a way to map the compiled and
                               // minified files to let the browser to know when
                               // inspect code the original file and line we are
                               // inspecting
-          style: 'compressed',// Minify the Sass as much as possible
-          trace: 'true'       // Apply the option --trace to the compiler
+          outputStyle: 'compressed' // Minify the Sass as much as possible
         },
         files: {
           '<%= app.dist %>/stratio-ui.base.css': '<%= app.src %>/index.scss',
@@ -75,11 +74,11 @@ module.exports = function (grunt) {
       },
       styleguide: {
         options: {
-          sourcemap: 'auto',  // The sourcemaps are a way to map the compiled and
+          sourceMap: 'auto',  // The sourcemaps are a way to map the compiled and
                               // minified files to let the browser to know when
                               // inspect code the original file and line we are
                               // inspecting
-          style: 'compressed' // Minify the Sass as much as possible
+          outputStyle: 'compressed' // Minify the Sass as much as possible
         },
         files: {
           '<%= app.dist %>/<%= app.styleguide %>/public/<%= app.styleguide %>.css': 'src/<%= app.styleguide %>.scss'
@@ -167,7 +166,7 @@ module.exports = function (grunt) {
   });
 
   // Load the npm tasks needed
-  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-batch');
   grunt.loadNpmTasks('grunt-contrib-clean');
