@@ -8,6 +8,7 @@
 
   Tasks
 
+  grunt sass-watch................Launch the doc task every time one Sass file changed
   grunt doc.......................Generates the documentation of the styleguide
   grunt serve.....................Launch a local webserver in http://localhost:9001
                                   to show the documentation
