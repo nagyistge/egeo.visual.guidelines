@@ -9,7 +9,7 @@ The Egeo Visual Guidelines is built using [KSS](http://warpspire.com/kss/). Take
 Download the project to any folder via `git clone` or using the ZIP button and launch `npm install` to install all dependencies needed to build the website ([NodeJS](https://nodejs.org) and [Git client](https://git-scm.com/download/) are required to be installed first to can use these commands on your console).
 
 ```
-git clone https://github.com/Stratio/egeo.ui.documentation.git
+git clone https://github.com/Stratio/egeo.visual.guidelines.git
 
 npm install
 ```
