@@ -1,6 +1,6 @@
 {
 	"version": 3,
-	"file": "dist/styleguide/public/styleguide.css",
+	"file": "dist/public/styleguide.css",
 	"sources": [
 		"src/styleguide.scss",
 		"node_modules/egeo.ui.base/dist/sass/settings/_settings.scss",

@@ -61,18 +61,6 @@ module.exports = function (grunt) {
 
     //Sass compile
     sass: {
-      dist: {
-        options: {
-          sourceMap: 'auto',  // The sourcemaps are a way to map the compiled and
-                              // minified files to let the browser to know when
-                              // inspect code the original file and line we are
-                              // inspecting
-          outputStyle: 'compressed' // Minify the Sass as much as possible
-        },
-        files: {
-          '<%= app.dist %>/stratio-ui.base.css': '<%= app.src %>/index.scss',
-        }
-      },
       styleguide: {
         options: {
           sourceMap: 'auto',  // The sourcemaps are a way to map the compiled and
@@ -82,7 +70,7 @@ module.exports = function (grunt) {
           outputStyle: 'compressed' // Minify the Sass as much as possible
         },
         files: {
-          '<%= app.dist %>/<%= app.styleguide %>/public/<%= app.styleguide %>.css': 'src/<%= app.styleguide %>.scss'
+          '<%= app.dist %>/public/<%= app.styleguide %>.css': 'src/<%= app.styleguide %>.scss'
         }
       }
     },
@@ -124,7 +112,7 @@ module.exports = function (grunt) {
       doc: {
         options: {
           cmd: function(f) {
-            return '.\\node_modules\\.bin\\kss-node --source src --destination dist/styleguide --template vendors/kss-template --homepage readme.md --css public/styleguide.css';
+            return '.\\node_modules\\.bin\\kss-node --source src --destination dist --template vendors/kss-template --homepage readme.md --css public/styleguide.css';
           }
         },
         files: [{
@@ -139,8 +127,7 @@ module.exports = function (grunt) {
       options: {
         force: true
       },
-      dist: ['dist'],
-      styleguide: ['<%= app.dist %>/<%= app.styleguide %>']
+      styleguide: ['<%= app.dist %>']
     },
 
     /* It copies the vendors needed to the documentation be viewed properly. */
@@ -148,8 +135,8 @@ module.exports = function (grunt) {
       styleguide: {
         files: [
           // Includes font files within path and its sub-directories
-          {expand: true, cwd: '<%= app.egeoBase %>', src: ['<%= app.assets %>/**'], dest: '<%= app.dist %>/<%= app.styleguide %>/public'},
-          {expand: true, cwd: '<%= app.src %>', src: ['<%= app.assets %>/**'], dest: '<%= app.dist %>/<%= app.styleguide %>/public'}
+          {expand: true, cwd: '<%= app.egeoBase %>', src: ['<%= app.assets %>/**'], dest: '<%= app.dist %>/public'},
+          {expand: true, cwd: '<%= app.src %>', src: ['<%= app.assets %>/**'], dest: '<%= app.dist %>/public'}
         ],
       },
     },
@@ -159,7 +146,7 @@ module.exports = function (grunt) {
       server: {
         options: {
           port: 9001,
-          base: '<%= app.dist %>/<%= app.styleguide %>',
+          base: '<%= app.dist %>',
           keepalive: true
         }
       }
