@@ -5,12 +5,15 @@
 @import '../node_modules/egeo.ui.base/dist/sass/settings/settings.typography';
 
 @import '../node_modules/egeo.ui.base/dist/sass/tools/tools.log';
+@import '../node_modules/egeo.ui.base/dist/sass/tools/tools.maps';
+@import '../node_modules/egeo.ui.base/dist/sass/tools/tools.layers';
 @import '../node_modules/egeo.ui.base/dist/sass/tools/tools.colors';
 @import '../node_modules/egeo.ui.base/dist/sass/tools/tools.typography';
 
 @import '../node_modules/egeo.ui.base/dist/sass/utils/utils.alignments';
 @import '../node_modules/egeo.ui.base/dist/sass/utils/utils.floats';
 @import '../node_modules/egeo.ui.base/dist/sass/utils/utils.text';
+@import '../node_modules/egeo.ui.base/dist/sass/utils/utils.clearfix';
 
 .version {
 	color: get-color(g5);
@@ -104,6 +107,10 @@ h3 + h4 {
 	}
 }
 
+.kss-section {
+	@extend %st-u-clearfix;
+}
+
 .color-block {
 	border: 1px solid #ececec;
 	box-sizing: border-box;
@@ -126,10 +133,10 @@ h3 + h4 {
 }
 
 .typo-block {
-	@include font-families;
-	@include font-sizes;
-	@include font-weights;
-	@include line-heights;
+	@include set-font-families;
+	@include set-font-sizes;
+	@include set-font-weights;
+	@include set-line-heights;
 
 	//border: 1px solid lightgray;
 	box-sizing: border-box;
@@ -139,15 +146,9 @@ h3 + h4 {
 	width: 100%;
 }
 
-@each $color-name, $color in $colors {
+@each $color-name, $color in $egeo-colors {
 	.color-block-#{$color-name} {
 		background: $color;
-
-		.color-block__title {
-			&:before {
-				//content: '#{$color-name}: #{$color}'
-			}
-		}
 	}
 }
 
