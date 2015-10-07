@@ -82,7 +82,7 @@ h3 + h4 {
 	}
 }
 
-.kss-description {
+.kss-article {
 	table {
 		border-collapse: collapse;
 		width: 100%;
@@ -111,7 +111,7 @@ h3 + h4 {
 	display: inline-block;
 	min-height: 150px;
 	position: relative;
-	width: 15%;
+	width: 100%;
 
 	&__title {
 		background: white;
@@ -149,4 +149,28 @@ h3 + h4 {
 			}
 		}
 	}
+}
+
+.c-col {
+	box-sizing: border-box;
+	display: inline-block;
+	position: relative;
+
+	@for $i from 1 through 12 {
+		&--#{$i} {
+			width: percentage( $i / 12 );
+		}
+	}
+
+	&--vertical-centered {
+		vertical-align: middle;
+	}
+
+	&--vertical-top {
+		vertical-align: top;
+	}
+}
+
+.u-float-right {
+	float: right;
 }
