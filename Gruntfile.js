@@ -51,29 +51,14 @@ module.exports = function (grunt) {
     styleguide: 'styleguide', // Warning: This name is used to reference files 
                               // and folders.
     vendors: 'vendors',       // Folder of the vendors not included in npm or bower
-    egeoBase: 'node_modules/egeo.ui.base/dist/',        // Folder of the Egeo UI Base Framework
+    kssTemplate: 'node_modules/egeo.website.template/dist/',  // Folder of the KSS Template
+    egeoBase: 'node_modules/egeo.ui.base/dist/',              // Folder of the Egeo UI Base Framework
     assets: 'assets'
   };
 
   grunt.initConfig({
     // Set the paths to be available inside the grunt tasks
     app: appConfig,
-
-    //Sass compile
-    sass: {
-      styleguide: {
-        options: {
-          sourceMap: 'auto',  // The sourcemaps are a way to map the compiled and
-                              // minified files to let the browser to know when
-                              // inspect code the original file and line we are
-                              // inspecting
-          outputStyle: 'compressed' // Minify the Sass as much as possible
-        },
-        files: {
-          '<%= app.dist %>/public/<%= app.styleguide %>.css': 'src/<%= app.styleguide %>.scss'
-        }
-      }
-    },
 
     /* 
 
@@ -91,7 +76,7 @@ module.exports = function (grunt) {
         files: ['<%= app.src %>/*.scss', '<%= app.src %>/**/*.scss'], // Files to watch
         tasks: ['doc'],                                               // Taks to execute when changes detected
         options: {
-          spawn: true,  // If the spawn property is established to false, the 
+          spawn: true   // If the spawn property is established to false, the 
                         // system is faster but also  more prone to fail due to 
                         // it opens a second thread to treat the files and can 
                         // result in the warning explained above.
@@ -112,7 +97,7 @@ module.exports = function (grunt) {
       doc: {
         options: {
           cmd: function(f) {
-            return '.\\node_modules\\.bin\\kss-node --source src --destination dist --template vendors/kss-template --homepage readme.md --css public/styleguide.css';
+            return '.\\node_modules\\.bin\\kss-node --source src --destination dist --template node_modules/egeo.website.template/dist/kss-template --homepage readme.md --css public/styleguide.css';
           }
         },
         files: [{
@@ -136,6 +121,7 @@ module.exports = function (grunt) {
         files: [
           // Includes font files within path and its sub-directories
           {expand: true, cwd: '<%= app.egeoBase %>', src: ['<%= app.assets %>/**'], dest: '<%= app.dist %>/public'},
+          {expand: true, cwd: '<%= app.kssTemplate %>/public', src: ['**/*'], dest: '<%= app.dist %>/public'},
           {expand: true, cwd: '<%= app.src %>', src: ['<%= app.assets %>/**'], dest: '<%= app.dist %>/public'}
         ],
       },
@@ -154,7 +140,6 @@ module.exports = function (grunt) {
   });
 
   // Load the npm tasks needed
-  grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-batch');
   grunt.loadNpmTasks('grunt-contrib-clean');
@@ -179,8 +164,7 @@ module.exports = function (grunt) {
     'clean:styleguide', // Clean the directory to ensure all files are generated 
                         // from scratch
     'batch:doc',        // Generate KSS documentation
-    'copy:styleguide',  // Copy files needed
-    'sass:styleguide'   // Generate custom CSS to customize the documentation
+    'copy:styleguide'   // Copy files needed
   ]);
 
   grunt.registerTask('default', [
