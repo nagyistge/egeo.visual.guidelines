@@ -3,10 +3,14 @@
 // Here we will talk about the meaning of the colors used, how to use them and so on.
 //
 // <p><img src="public/assets/images/background_colors.png" ></p>
-// <div class="color-block color-block-f1"><div class="color-block__title">f1: #222b37 (Top area)</div></div>
-// <div class="color-block color-block-f2"><div class="color-block__title">f2: #1a212b (Header area)</div></div>
-// <div class="color-block color-block-f3"><div class="color-block__title">f3: #eff2f3 (Submenu area)</div></div>
-// <div class="color-block color-block-f4"><div class="color-block__title">f4: #e1e4e5 (Submenu area with -5 luminosity value)</div></div>
-// <div class="color-block color-block-f5"><div class="color-block__title">f5: #fff (Main content area)</div></div>
+// <div class="c-col c-col--12">
+// <div class="color-block color-block-b1 c-col c-col--3"><div class="color-block__title">b1: #222b37 (Top area)</div></div><!--
+// 	--><div class="color-block color-block-b2 c-col c-col--3"><div class="color-block__title">b2: #1a212b (Header area)</div></div><!--
+// 	--><div class="color-block color-block-b3 c-col c-col--3"><div class="color-block__title">b3: #eff2f3 (Submenu area)</div></div><!--
+// 	--><div class="color-block color-block-b4 c-col c-col--3"><div class="color-block__title">b4: #fff (Main content area)</div></div><!--
+// 	--><div class="c-col c-col--3"></div><!--
+// 	--><div class="c-col c-col--3"></div><!--
+// 	--><div class="color-block color-block-b3_dark c-col c-col--3"><div class="color-block__title">b3_dark: #e1e4e5<br>(Submenu area with -5 luminosity value)</div></div>
+// </div>
 // 
 // Styleguide 1.1

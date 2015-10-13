@@ -4,13 +4,16 @@
 // Accent colors should be used sparingly, mainly for buttons, 
 // links and elements of the header, menus and footer.
 //
-// <div class="color-block color-block-c1"><div class="color-block__title">c1: #37b5e4</div></div>
-// <div class="color-block color-block-c1b"><div class="color-block__title">c1b: #2d96bd</div></div>
-// <div class="color-block color-block-c2"><div class="color-block__title">c2: #b7bfc3</div></div>
-// <div class="color-block color-block-c2b"><div class="color-block__title">c2b: #92989c</div></div>
-// <div class="color-block color-block-c3"><div class="color-block__title">c3: #485566</div></div>
-// <div class="color-block color-block-c3b"><div class="color-block__title">c3b: #2d3540</div></div>
-// <div class="color-block color-block-c4"><div class="color-block__title">c4: #222b37</div></div>
-// <div class="color-block color-block-c5"><div class="color-block__title">c5: #d3d8db</div></div>
+// <div class="c-col c-col--12">
+// <div class="color-block color-block-a1_light c-col c-col--3"><div class="color-block__title">a1_light: #3dc9fc</div></div><!--
+// 	--><div class="color-block color-block-a2_light c-col c-col--3"><div class="color-block__title">a2_light: #ccd9de</div></div><!--
+// 	--><div class="color-block color-block-a3_light c-col c-col--3"><div class="color-block__title">a3_light: #4f6880</div></div><br><!--
+// 	--><div class="color-block color-block-a1 c-col c-col--3"><div class="color-block__title">a1: #37b5e4</div></div><!--
+// 	--><div class="color-block color-block-a2 c-col c-col--3"><div class="color-block__title">a2: #b5c1c5</div></div><!--
+// 	--><div class="color-block color-block-a3 c-col c-col--3"><div class="color-block__title">a3: #405467</div></div><br><!--
+// 	--><div class="color-block color-block-a1_dark c-col c-col--3"><div class="color-block__title">a1_dark: #2d96bd</div></div><!--
+// 	--><div class="color-block color-block-a2_dark c-col c-col--3"><div class="color-block__title">a2_dark: #919b9e</div></div><!--
+// 	--><div class="color-block color-block-a3_dark c-col c-col--3"><div class="color-block__title">a3_dark: #283440</div></div>
+// </div>
 // 
 // Styleguide 1.2
