@@ -1,66 +1,63 @@
 // Typography
 //
-// Here we will talk about the use of diferent typefaces.
+// We have use two different typefaces. Brandon Grotesque (Stratio brand font) for headings and Open sans (Google open-source font) for body text. Both are highly-readable and clear.
 //
 // ## Brandon Grotesque
 //
-//	Use X when ....
+//This typeface is for headings and only can be used in uppercase format. 
 //
-// ### Font sizes
-//
-// | Font-sizes            																					| Value     | Modifier  |
+// ### Brandon font sizes
+// | Font sizes           																					| Value     | Modifier  |
 // |--------------------------------------------------------------------------------------------------------|-----------|-----------|
-// | <span class="typo-block typo-block--brandon-grotesque typo-block--xgiant">Brandon Grotesque</span>		| 4rem	   	| xgiant	|
-// | <span class="typo-block typo-block--brandon-grotesque typo-block--giant">Brandon Grotesque</span>		| 3rem		| giant		|
-// | <span class="typo-block typo-block--brandon-grotesque typo-block--xxxlarge">Brandon Grotesque</span>	| 2.5rem	| xxxlarge	|
-// | <span class="typo-block typo-block--brandon-grotesque typo-block--xxlarge">Brandon Grotesque</span>	| 2rem		| xxlarge	|
-// | <span class="typo-block typo-block--brandon-grotesque typo-block--xlarge">Brandon Grotesque</span>		| 1.5rem	| xlarge	|
-// | <span class="typo-block typo-block--brandon-grotesque typo-block--large">Brandon Grotesque</span>		| 1.2rem	| large		|
-// | <span class="typo-block typo-block--brandon-grotesque typo-block--medium">Brandon Grotesque</span>		| 1rem		| medium	|
-// | <span class="typo-block typo-block--brandon-grotesque typo-block--small">Brandon Grotesque</span>		| .8rem		| small		|
-// | <span class="typo-block typo-block--brandon-grotesque typo-block--xsmall">Brandon Grotesque</span>		| .7rem		| xsmall	|
-// | <span class="typo-block typo-block--brandon-grotesque typo-block--xxsmall">Brandon Grotesque</span>	| .6rem		| xxsmall	|
-// | <span class="typo-block typo-block--brandon-grotesque typo-block--xxxsmall">Brandon Grotesque</span>	| .5rem		| xxxsmall	|
-//
-// ### Font weights
-//
-// | Font-weights            																									| Value     | Modifier  |
+// | <span class="typo-block typo-block--brandon-grotesque typo-block--giant">A B C D E F G H I J K L M N O P</span>		| 2.75rem		| giant		|
+// | <span class="typo-block typo-block--brandon-grotesque typo-block--xxxlarge">A B C D E F G H I J K L M N O P Q R S T</span>	| 2.13rem	| xxxlarge	|
+// | <span class="typo-block typo-block--brandon-grotesque typo-block--xxlarge">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</span>	| 1.8rem		| xxlarge	|
+// | <span class="typo-block typo-block--brandon-grotesque typo-block--xlarge">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</span>		| 1.75rem	| xlarge	|
+// | <span class="typo-block typo-block--brandon-grotesque typo-block--large">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</span>		| 1.38rem	| large		|
+// | <span class="typo-block typo-block--brandon-grotesque typo-block--medium">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</span>		| 1.13rem		| medium	|
+// | <span class="typo-block typo-block--brandon-grotesque typo-block--small">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</span>		| 1rem		| small		|
+// | <span class="typo-block typo-block--brandon-grotesque typo-block--xsmall">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</span>		| .94rem		| xsmall	|
+// | <span class="typo-block typo-block--brandon-grotesque typo-block--xxsmall">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</span>	| .0.82rem		| xxsmall	|
+// ### Brandon font weights
+// | Font weights            																									| Value     | Modifier  |
 // |----------------------------------------------------------------------------------------------------------------------------|-----------|-----------|
-// | <span class="typo-block typo-block--brandon-grotesque typo-block--medium typo-block--bolder">Brandon Grotesque</span>		| 900		| bolder	|
-// | <span class="typo-block typo-block--brandon-grotesque typo-block--medium typo-block--bold">Brandon Grotesque</span>		| 700		| bold		|
-// | <span class="typo-block typo-block--brandon-grotesque typo-block--medium typo-block--semibold">Brandon Grotesque</span>	| 500		| semibold	|
-// | <span class="typo-block typo-block--brandon-grotesque typo-block--medium typo-block--normal">Brandon Grotesque</span>		| 400		| normal	|
-// | <span class="typo-block typo-block--brandon-grotesque typo-block--medium typo-block--light">Brandon Grotesque</span>		| 200		| light		|
+// | <span class="typo-block typo-block--brandon-grotesque typo-block--xxlarge typo-block--normal">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</span>		| 400		| normal	|
+// | <span class="typo-block typo-block--brandon-grotesque typo-block--xxlarge typo-block--light">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</span>		| 200		| light		|
 //
 // ## Open Sans
 //
-// When and how use Open Sans...
-//
-//
-// | Font-sizes            																	| Value     | Modifier  |
-// |----------------------------------------------------------------------------------------|-----------|-----------|
-// | <span class="typo-block typo-block--open-sans typo-block--xgiant">Open Sans</span>		| 4rem	   	| xgiant	|
-// | <span class="typo-block typo-block--open-sans typo-block--giant">Open Sans</span>		| 3rem		| giant		|
-// | <span class="typo-block typo-block--open-sans typo-block--xxxlarge">Open Sans</span>	| 2.5rem	| xxxlarge	|
-// | <span class="typo-block typo-block--open-sans typo-block--xxlarge">Open Sans</span>	| 2rem		| xxlarge	|
-// | <span class="typo-block typo-block--open-sans typo-block--xlarge">Open Sans</span>		| 1.5rem	| xlarge	|
-// | <span class="typo-block typo-block--open-sans typo-block--large">Open Sans</span>		| 1.2rem	| large		|
-// | <span class="typo-block typo-block--open-sans typo-block--medium">Open Sans</span>		| 1rem		| medium	|
-// | <span class="typo-block typo-block--open-sans typo-block--small">Open Sans</span>		| .8rem		| small		|
-// | <span class="typo-block typo-block--open-sans typo-block--xsmall">Open Sans</span>		| .7rem		| xsmall	|
-// | <span class="typo-block typo-block--open-sans typo-block--xxsmall">Open Sans</span>	| .6rem		| xxsmall	|
-// | <span class="typo-block typo-block--open-sans typo-block--xxxsmall">Open Sans</span>	| .5rem		| xxxsmall	|
-//
-// ### Font weights
-//
-// | Font-weights            																					| Value     | Modifier  |
-// |------------------------------------------------------------------------------------------------------------|-----------|-----------|
-// | <span class="typo-block typo-block--open-sans typo-block--medium typo-block--bolder">Open Sans</span>		| 900		| bolder	|
-// | <span class="typo-block typo-block--open-sans typo-block--medium typo-block--bold">Open Sans</span>		| 700		| bold		|
-// | <span class="typo-block typo-block--open-sans typo-block--medium typo-block--semibold">Open Sans</span>	| 500		| semibold	|
-// | <span class="typo-block typo-block--open-sans typo-block--medium typo-block--normal">Open Sans</span>		| 400		| normal	|
-// | <span class="typo-block typo-block--open-sans typo-block--medium typo-block--light">Open Sans</span>		| 200		| light		|
+// Use this typeface mainly for bodytext and subheadings
 // 
+// ### Open Sans font sizes
+// | Font sizes            																	| Value     | Modifier  |
+// |----------------------------------------------------------------------------------------|-----------|-----------|
+// | <span class="typo-block typo-block--open-sans typo-block--xgiant">ABCDEFG abcdefg 012345</span>		| 4rem	   	| xgiant	|
+// | <span class="typo-block typo-block--open-sans typo-block--giant">ABCDEFGH abcdefgh 0123456789</span>		| 3rem		| giant		|
+// | <span class="typo-block typo-block--open-sans typo-block--xxxlarge">ABCDEFGHIJKL abcdefghijkl 01234567899</span>	| 2.5rem	| xxxlarge	|
+// | <span class="typo-block typo-block--open-sans typo-block--xxlarge">ABCDEFGHIJKL abcdefghijkl 0123456789</span>	| 2rem		| xxlarge	|
+// | <span class="typo-block typo-block--open-sans typo-block--xlarge">ABCDEFGHIJKL abcdefghijkl 0123456789</span>		| 1.5rem	| xlarge	|
+// | <span class="typo-block typo-block--open-sans typo-block--large">ABCDEFGHIJKL abcdefghijkl 0123456789</span>		| 1.2rem	| large		|
+// | <span class="typo-block typo-block--open-sans typo-block--medium">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789</span>		| 1rem		| medium	|
+// | <span class="typo-block typo-block--open-sans typo-block--small">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789</span>		| .8rem		| small		|
+// | <span class="typo-block typo-block--open-sans typo-block--xsmall">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789</span>		| .7rem		| xsmall	|
+// | <span class="typo-block typo-block--open-sans typo-block--xxsmall">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789</span>	| .6rem		| xxsmall	|
+// | <span class="typo-block typo-block--open-sans typo-block--xxxsmall">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789</span>	| .5rem		| xxxsmall	|
+//
+//
+// ### Open Sans font weights  
+//
+// | Font weights            																					| Value     | Modifier  |
+// |------------------------------------------------------------------------------------------------------------|-----------|-----------|
+// | <span class="typo-block typo-block--open-sans typo-block--xlarge typo-block--bolder">ABCDEFGHIJKL abcdefghijkl 0123456789</span>		| 900		| bolder	|
+// | <span class="typo-block typo-block--open-sans typo-block--xlarge typo-block--bold">ABCDEFGHIJKL abcdefghijkl 0123456789</span>		| 700		| bold		|
+// | <span class="typo-block typo-block--open-sans typo-block--xlarge typo-block--semibold">ABCDEFGHIJKL abcdefghijkl 0123456789</span>	| 500		| semibold	|
+// | <span class="typo-block typo-block--open-sans typo-block--xlarge typo-block--normal">ABCDEFGHIJKL abcdefghijkl 0123456789</span>		| 400		| normal	|
+// | <span class="typo-block typo-block--open-sans typo-block--xlarge typo-block--light">ABCDEFGHIJKL abcdefghijkl 0123456789</span>		| 200		| light		|
+// 
+// 
+// ## Font size examples 
+// <p><img src="public/assets/images/tipografias_tam.png"></p>
+//
 //
 // ## Line Heights
 //
@@ -82,5 +79,6 @@
 //
 // <p class="typo-block typo-block--line-height-single">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque auctor nunc elit. Sed ut euismod sem, congue blandit odio. Curabitur enim eros, imperdiet aliquam maximus non, luctus a diam. Suspendisse eleifend lectus metus. Morbi maximus eget sem a laoreet. Proin a nibh nec dolor vulputate auctor sit amet ut erat. Fusce scelerisque justo leo, sit amet rhoncus leo finibus dictum. Aliquam eget placerat nunc.</p>
 //
+// <p><img style="width:100%; height:auto" src="public/assets/images/Stratio_Tipografia_02.png" ></p>
 //
 // Styleguide 2
