@@ -1,6 +1,65 @@
 // Input
 //
-// <img src="public/assets/images/workflow_forms2_default.jpg" />
-// <img src="public/assets/images/workflow_forms2_focus.jpg" />
+// The Input Component includes the different types of HTML inputs like text, number, data, etc.
+//
+// For more information, visit:
+// * UX Functional Notes (soon)
+// * [UI Kit implementation](http://guide.stratio.com/web/ui-docs/section-7.html#section-7.13)
+//
+// ### An input in the default state
+//
+// <img src="public/assets/images/input_normal.png" />
+//
+// #### Label
+//
+// * Color: [a1](section-1.html#section-1.2)
+// * Font-size: [body_xxsmall](section-2.html)
+//
+// #### Input
+//
+// * Border color: [n6](section-1.html#section-1.2)
+// * Border color (on focus): [n10](section-1.html#section-1.2)
+// * Color: [n10](section-1.html#section-1.2)
+// * Font-size: [body_large](section-2.html)
+//
+// #### Placeholder
+//
+// * Color: [n7](section-1.html#section-1.2)
+// * Font-size: [body_xxsmall](section-2.html)
+//
+// ### An input showing required information
+//
+// Inputs could have required information needed to keep in mind to be covered. This helpful info will be displayed as is shown below.
+//
+// <img src="public/assets/images/input_required.png" />
+//
+// #### Required text
+//
+// * Color: [n5](section-1.html#section-1.2)
+// * Font-size: [body_xxsmall](section-2.html)
+//
+// ### An input showing the help message
+//
+// **Note:** Image obsolete. Although in the image, the message box appears at left of the input, it should be placed at bottom, born in the help icon.
+//
+// <img src="public/assets/images/input_help.png" />
+//
+// #### Help Message
+//
+// * Background: [n0](section-1.html#section-1.2)
+// * Color: [n8](section-1.html#section-1.2)
+// * Font-size: [body_xxsmall](section-2.html)
+// * Padding: 10px
+//
+// ### An input in a warning state
+//
+// <img src="public/assets/images/input_warning.png" />
+//
+// #### Warning Message
+//
+// * Background: [s2](section-1.html#section-1.2)
+// * Color: [n0](section-1.html#section-1.2)
+// * Font-size: [body_xxsmall](section-2.html)
+// * Padding: .5em
 // 
 // Styleguide 4.1
