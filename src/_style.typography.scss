@@ -4,21 +4,26 @@
 //
 // ## Brandon Grotesque
 //
-//This typeface is for headings and only can be used in uppercase format. 
+// This typeface is for headings and only can be used in uppercase format. 
 //
 // ### Brandon font sizes
-// | Font sizes           																					| Value     | Modifier  |
-// |--------------------------------------------------------------------------------------------------------|-----------|-----------|
-// | <span class="typo-block typo-block--brandon-grotesque typo-block--giant">A B C D E F G H I J K L M N O P</span>		| 2.75rem		| giant		|
-// | <span class="typo-block typo-block--brandon-grotesque typo-block--xxxlarge">A B C D E F G H I J K L M N O P Q R S T</span>	| 2.13rem	| xxxlarge	|
-// | <span class="typo-block typo-block--brandon-grotesque typo-block--xxlarge">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</span>	| 1.8rem		| xxlarge	|
-// | <span class="typo-block typo-block--brandon-grotesque typo-block--xlarge">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</span>		| 1.75rem	| xlarge	|
-// | <span class="typo-block typo-block--brandon-grotesque typo-block--large">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</span>		| 1.38rem	| large		|
-// | <span class="typo-block typo-block--brandon-grotesque typo-block--medium">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</span>		| 1.13rem		| medium	|
-// | <span class="typo-block typo-block--brandon-grotesque typo-block--small">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</span>		| 1rem		| small		|
-// | <span class="typo-block typo-block--brandon-grotesque typo-block--xsmall">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</span>		| .94rem		| xsmall	|
-// | <span class="typo-block typo-block--brandon-grotesque typo-block--xxsmall">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</span>	| .0.82rem		| xxsmall	|
+//
+// | Font sizes           																			                                           		| Value     | Modifier      |
+// |------------------------------------------------------------------------------------------------------------------------------------------------|-----------|---------------|
+// | <span class="typo-block typo-block--brandon-grotesque typo-block--head_giant">A B C D E F G H I J K L M N O P</span>		                    | 2.75rem	| head_giant	|
+// | <span class="typo-block typo-block--brandon-grotesque typo-block--head_xxxlarge">A B C D E F G H I J K L M N O P Q R S T</span>	            | 2.12rem	| head_xxxlarge	|
+// | <span class="typo-block typo-block--brandon-grotesque typo-block--head_xxlarge">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</span>	    | 1.88rem	| head_xxlarge	|
+// | <span class="typo-block typo-block--brandon-grotesque typo-block--head_xlarge">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</span>		| 1.75rem	| head_xlarge	|
+// | <span class="typo-block typo-block--brandon-grotesque typo-block--head_large">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</span>		| 1.5rem	| head_large	|
+// | <span class="typo-block typo-block--brandon-grotesque typo-block--head_medium">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</span>		| 1.38rem	| head_medium	|
+// | <span class="typo-block typo-block--brandon-grotesque typo-block--head_small">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</span>		| 1.13rem	| head_small	|
+// | <span class="typo-block typo-block--brandon-grotesque typo-block--head_xsmall">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</span>		| 1rem	    | head_xsmall	|
+// | <span class="typo-block typo-block--brandon-grotesque typo-block--head_xxsmall">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</span>     | 0.94rem   | head_xxsmall  |
+// | <span class="typo-block typo-block--brandon-grotesque typo-block--head_xxxsmall">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</span>    | 0.82rem   | head_xxsmall  |
+// | <span class="typo-block typo-block--brandon-grotesque typo-block--head_mini">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</span>	    | 0.75rem	| head_mini  	|
+//
 // ### Brandon font weights
+//
 // | Font weights            																									| Value     | Modifier  |
 // |----------------------------------------------------------------------------------------------------------------------------|-----------|-----------|
 // | <span class="typo-block typo-block--brandon-grotesque typo-block--xxlarge typo-block--normal">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</span>		| 400		| normal	|
@@ -26,34 +31,48 @@
 //
 // ## Open Sans
 //
-// Use this typeface mainly for bodytext and subheadings
+// Use this typeface mainly for bodytext and subheadings.
 // 
 // ### Open Sans font sizes
-// | Font sizes            																	| Value     | Modifier  |
-// |----------------------------------------------------------------------------------------|-----------|-----------|
-// | <span class="typo-block typo-block--open-sans typo-block--xgiant">ABCDEFG abcdefg 012345</span>		| 4rem	   	| xgiant	|
-// | <span class="typo-block typo-block--open-sans typo-block--giant">ABCDEFGH abcdefgh 0123456789</span>		| 3rem		| giant		|
-// | <span class="typo-block typo-block--open-sans typo-block--xxxlarge">ABCDEFGHIJKL abcdefghijkl 01234567899</span>	| 2.5rem	| xxxlarge	|
-// | <span class="typo-block typo-block--open-sans typo-block--xxlarge">ABCDEFGHIJKL abcdefghijkl 0123456789</span>	| 2rem		| xxlarge	|
-// | <span class="typo-block typo-block--open-sans typo-block--xlarge">ABCDEFGHIJKL abcdefghijkl 0123456789</span>		| 1.5rem	| xlarge	|
-// | <span class="typo-block typo-block--open-sans typo-block--large">ABCDEFGHIJKL abcdefghijkl 0123456789</span>		| 1.2rem	| large		|
-// | <span class="typo-block typo-block--open-sans typo-block--medium">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789</span>		| 1rem		| medium	|
-// | <span class="typo-block typo-block--open-sans typo-block--small">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789</span>		| .8rem		| small		|
-// | <span class="typo-block typo-block--open-sans typo-block--xsmall">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789</span>		| .7rem		| xsmall	|
-// | <span class="typo-block typo-block--open-sans typo-block--xxsmall">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789</span>	| .6rem		| xxsmall	|
-// | <span class="typo-block typo-block--open-sans typo-block--xxxsmall">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789</span>	| .5rem		| xxxsmall	|
+// | Font sizes            																	                            | Value     | Modifier      |
+// |--------------------------------------------------------------------------------------------------------------------|-----------|---------------|
+// | <span class="typo-block typo-block--open-sans typo-block--xxxlarge">ABCDEFGHIJKL abcdefghijkl 01234567899</span>	| 1.38rem	| body_xxxlarge	|
+// | <span class="typo-block typo-block--open-sans typo-block--xxlarge">ABCDEFGHIJKL abcdefghijkl 0123456789</span>	    | 1.19rem	| body_xxlarge	|
+// | <span class="typo-block typo-block--open-sans typo-block--xlarge">ABCDEFGHIJKL abcdefghijkl 0123456789</span>		| 1.1rem	| body_xlarge	|
+// | <span class="typo-block typo-block--open-sans typo-block--large">ABCDEFGHIJKL abcdefghijkl 0123456789</span>		| 1rem	    | body_large	|
+// | <span class="typo-block typo-block--open-sans typo-block--medium">ABCDEFGHIJKL abcdefghijkl 0123456789</span>		| .94rem	| body_medium	|
+// | <span class="typo-block typo-block--open-sans typo-block--small">ABCDEFGHIJKL abcdefghijkl 0123456789</span>		| .84rem	| body_small	|
+// | <span class="typo-block typo-block--open-sans typo-block--xsmall">ABCDEFGHIJKL abcdefghijkl 0123456789</span>		| .82rem	| body_xsmall	|
+// | <span class="typo-block typo-block--open-sans typo-block--xxsmall">ABCDEFGHIJKL abcdefghijkl 0123456789</span>	    | .75rem	| body_xxsmall	|
+// | <span class="typo-block typo-block--open-sans typo-block--xxxsmall">ABCDEFGHIJKL abcdefghijkl 0123456789</span>	| .69rem	| body_xxxsmall	|
 //
 //
 // ### Open Sans font weights  
 //
-// | Font weights            																					| Value     | Modifier  |
-// |------------------------------------------------------------------------------------------------------------|-----------|-----------|
-// | <span class="typo-block typo-block--open-sans typo-block--xlarge typo-block--bolder">ABCDEFGHIJKL abcdefghijkl 0123456789</span>		| 900		| bolder	|
+// | Font weights            																					                        | Value     | Modifier  |
+// |------------------------------------------------------------------------------------------------------------------------------------|-----------|-----------|
+// | <span class="typo-block typo-block--open-sans typo-block--xlarge typo-block--bolder">ABCDEFGHIJKL abcdefghijkl 0123456789</span>	| 900		| bolder	|
 // | <span class="typo-block typo-block--open-sans typo-block--xlarge typo-block--bold">ABCDEFGHIJKL abcdefghijkl 0123456789</span>		| 700		| bold		|
 // | <span class="typo-block typo-block--open-sans typo-block--xlarge typo-block--semibold">ABCDEFGHIJKL abcdefghijkl 0123456789</span>	| 500		| semibold	|
-// | <span class="typo-block typo-block--open-sans typo-block--xlarge typo-block--normal">ABCDEFGHIJKL abcdefghijkl 0123456789</span>		| 400		| normal	|
-// | <span class="typo-block typo-block--open-sans typo-block--xlarge typo-block--light">ABCDEFGHIJKL abcdefghijkl 0123456789</span>		| 200		| light		|
+// | <span class="typo-block typo-block--open-sans typo-block--xlarge typo-block--normal">ABCDEFGHIJKL abcdefghijkl 0123456789</span>	| 400		| normal	|
+// | <span class="typo-block typo-block--open-sans typo-block--xlarge typo-block--light">ABCDEFGHIJKL abcdefghijkl 0123456789</span>	| 200		| light		|
 // 
+// ## Ico Stratio
+//
+// Use this typeface only to show icons embedded in the ico-stratio font.
+// 
+// ### Ico Stratio font sizes
+//
+// | Font weights                                                                                                           | Value     | Modifier      |
+// |------------------------------------------------------------------------------------------------------------------------|-----------|---------------|
+// | <span class="typo-block typo-block--stratio-iconfont typo-block--icon_xxlarge"><i class="icon-datetime"></i></span>    | 1.88rem   | icon_xxlarge  |
+// | <span class="typo-block typo-block--stratio-iconfont typo-block--icon_xlarge"><i class="icon-datetime"></i></span>     | 1.63rem   | icon_xlarge   |
+// | <span class="typo-block typo-block--stratio-iconfont typo-block--icon_large"><i class="icon-datetime"></i></span>      | 1.38rem   | icon_large    |
+// | <span class="typo-block typo-block--stratio-iconfont typo-block--icon_medium"><i class="icon-datetime"></i></span>     | 1.2rem    | icon_medium   |
+// | <span class="typo-block typo-block--stratio-iconfont typo-block--icon_small"><i class="icon-datetime"></i></span>      | 1.1rem    | icon_small    |
+// | <span class="typo-block typo-block--stratio-iconfont typo-block--icon_xsmall"><i class="icon-datetime"></i></span>     | .94rem    | icon_xsmall   |
+// | <span class="typo-block typo-block--stratio-iconfont typo-block--icon_xxsmall"><i class="icon-datetime"></i></span>    | .82rem    | icon_xxsmall  |
+// | <span class="typo-block typo-block--stratio-iconfont typo-block--icon_xxxsmall"><i class="icon-datetime"></i></span>   | .7rem     | icon_xxxsmall |
 // 
 // ## Font size examples 
 // <p><img src="public/assets/images/tipografias_tam.png"></p>
