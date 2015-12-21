@@ -51,6 +51,7 @@ module.exports = function (grunt) {
     styleguide: 'styleguide', // Warning: This name is used to reference files 
                               // and folders.
     vendors: 'vendors',       // Folder of the vendors not included in npm or bower
+    upload: '\\\\azufre\\guide\\web',             // Folder of the distributable deliverables.
     kssTemplate: 'node_modules/egeo.website.template/dist/',  // Folder of the KSS Template
     egeoBase: 'node_modules/egeo.ui.base/dist/',              // Folder of the Egeo UI Base Framework
     assets: 'assets'
@@ -112,7 +113,8 @@ module.exports = function (grunt) {
       options: {
         force: true
       },
-      styleguide: ['<%= app.dist %>']
+      styleguide: ['<%= app.dist %>'],
+      upload: ['<%= app.upload %>/visual-docs']
     },
 
     /* It copies the vendors needed to the documentation be viewed properly. */
@@ -125,6 +127,11 @@ module.exports = function (grunt) {
           {expand: true, cwd: '<%= app.src %>', src: ['<%= app.assets %>/**'], dest: '<%= app.dist %>/public'}
         ],
       },
+      upload: {
+        files: [
+          {expand: true, cwd: '<%= app.dist %>', src: ['**'], dest: '<%= app.upload %>/visual-docs'}
+        ]
+      }
     },
 
     /* It launches a local webserver to view the compiled documentation. */
@@ -165,6 +172,12 @@ module.exports = function (grunt) {
                         // from scratch
     'batch:doc',        // Generate KSS documentation
     'copy:styleguide'   // Copy files needed
+  ]);
+
+  grunt.registerTask('upload', [
+    'clean:upload', // Clean the directory to ensure all files are generated 
+                        // from scratch
+    'copy:upload',  // Copy files needed
   ]);
 
   grunt.registerTask('default', [
